@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indice</title>
+	<link href="http://fonts.cdnfonts.com/css/dot-matrix" rel="stylesheet">
+	<script src="typed.js"></script>
+	<script>
+		function blinktext() {
+  var f = document.getElementById('announcement');
+  setInterval(function() {
+    f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden');
+  }, 500);
+}
+	</script>
+	
+</head>
+
+	<style>
+		body{
+			background-color: black;
+			color: #5DE133;
+			font-family: 'Dot Matrix', sans-serif;
+			font-size: 40px;
+		}
+		h4{
+			font-size: 30px;
+		}
+
+	</style>
+<body onload="blinktext();">
+	<div id="text"></div> <h4 id="announcement">...</h4>
+	<script>
+		setTimeout(function(){
+    		var text = document.getElementById("text");
+			text.innerHTML = '> Hola';
+		}, 2000);
+		setTimeout(function(){
+    		var text = document.getElementById("text");
+			text.innerHTML = '> Hola<br> > Este es un proyecto de Luis Enrique Perez Silva';
+		}, 6000);
+		setTimeout(function(){
+    		var text = document.getElementById("text");
+			text.innerHTML = '> Hola<br> > Este es un proyecto de Luis Enrique Perez Silva<br>> Por favor elige que proyecto ver ahora';
+		}, 9000);
+		setTimeout(function(){
+    		var text = document.getElementById("text");
+			text.innerHTML = '> Hola<br> > Este es un proyecto de Luis Enrique Perez Silva<br>> Por favor elige que proyecto ver ahora<br>> <a href=Practica_1/index.html>Practica 1</a>';
+		}, 10000);
+		setTimeout(function(){
+    		var text = document.getElementById("text");
+			text.innerHTML = '> Hola<br> > Este es un proyecto de Luis Enrique Perez Silva<br>> Por favor elige que proyecto ver ahora<br>> <a href=Practica_1/index.html>Practica 1</a><br>> <a href=Practica_2/index.html>Practica 2</a>';
+		}, 11000);
+		setTimeout(function(){
+    		var text = document.getElementById("text");
+			text.innerHTML = '> Hola<br> > Este es un proyecto de Luis Enrique Perez Silva<br>> Por favor elige que proyecto ver ahora<br>> <a href=Practica_1/index.html>Practica 1</a><br>> <a href=Practica_2/index.html>Practica 2</a><br>> <a href=Practica_3/index.html>Practica 3</a>';
+		}, 12000);
+		setTimeout(function(){
+    		var text = document.getElementById("text");
+			text.innerHTML = '> Hola<br> > Este es un proyecto de Luis Enrique Perez Silva<br>> Por favor elige que proyecto ver ahora<br>> <a href=Practica_1/index.html>Practica 1</a><br>> <a href=Practica_2/index.html>Practica 2</a><br>> <a href=Practica_3/index.html>Practica 3</a><br>> <a href=Practica_4/index.html>Practica 4</a>';
+		}, 13000);
+
+	</script>	
+
+</body>
+</html>
